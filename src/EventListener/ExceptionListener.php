@@ -54,7 +54,7 @@ class ExceptionListener
             ];
         }
 
-        $jsonResponse = new JsonResponse($response, $response['code']);
+        $jsonResponse = new JsonResponse($response, 200);
 
         $event->setResponse($jsonResponse);
     }
